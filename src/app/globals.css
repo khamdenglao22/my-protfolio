@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #F1E9D7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.box-1 {
+  transform: translateY(0%);
+  opacity: 1;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+.box-icon-1 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation-name: example-icon;
+  animation-duration: 1s;
+}
+
+.box-icon-2 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation-name: example-icon;
+  animation-duration: 3s;
+}
+
+.box-icon-3 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation-name: example-icon;
+  animation-duration: 5s;
+}
+
+@keyframes example {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes example-icon {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+.nav-bar-header{
+    z-index: 10000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    transition: all .3s;
+}
+.nav-bar-header-active{
+    right: -100%;
+    top: 0;
+}
+
+.bar-header{
+  display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #5a5959;
+    margin-bottom: 10px;
 }
