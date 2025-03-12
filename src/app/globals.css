@@ -64,7 +64,7 @@
 .nav-bar-header{
     z-index: 10000;
     position: fixed;
-    right: 0;
+    right: -100%;
     top: 0;
     width: 100%;
     background-color: black;
@@ -72,7 +72,7 @@
     transition: all .3s;
 }
 .nav-bar-header-active{
-    right: -100%;
+    right: 0%;
     top: 0;
 }
 
