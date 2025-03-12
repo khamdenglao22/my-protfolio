@@ -73,7 +73,7 @@ const Project = () => {
               <a className="border-b font-bold text-[12px] sm:text-[16px]" href="/" target="_blank">
                 Live Demo
             </a>
-              <a className="border-b font-bold text-[12px] sm:text-[16px]" href="https://github.com/khamdenglao22/ev_lao" target="_blank">
+              <a className="border-b font-bold text-[12px] sm:text-[16px]" href="https://github.com/khamdenglao22/my-protfolio" target="_blank">
                 GitHub Repo
             </a>
             </div>
